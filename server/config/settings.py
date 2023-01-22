@@ -48,7 +48,8 @@ LOCAL_APPS = [
     "apps.courses",
     "apps.deposits",
     "apps.organizations",
-    "apps.markdown"
+    "apps.markdown",
+    "apps.storages",
 ]
 
 # Application definition
