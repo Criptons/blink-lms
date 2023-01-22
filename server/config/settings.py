@@ -43,7 +43,10 @@ DEFAULT_APPS = [
 ]
 
 # Local Application Project
-LOCAL_APPS = ["apps.accounts"]
+LOCAL_APPS = [
+    "apps.accounts",
+    "apps.courses",
+]
 
 # Application definition
 INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
