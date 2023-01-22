@@ -1,0 +1,1067 @@
+# Server Files
+
+# Created by https://www.toptal.com/developers/gitignore/api/python,django,visualstudio,visualstudiocode,pycharm,venv,git,zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,django,visualstudio,visualstudiocode,pycharm,venv,git,zsh
+
+### Django ###
+server/.DS_Store
+server/*.log
+server/*.pot
+server/*.pyc
+server/__pycache__/
+server/local_settings.py
+server/db.sqlite3
+server/db.sqlite3-journal
+server/media
+server/static
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+server/*.py[cod]
+server/*$py.class
+
+# C extensions
+server/*.so
+
+# Distribution / packaging
+server/.Python
+server/build/
+server/develop-eggs/
+server/dist/
+server/downloads/
+server/eggs/
+server/.eggs/
+server/lib/
+server/lib64/
+server/parts/
+server/sdist/
+server/var/
+server/wheels/
+server/share/python-wheels/
+server/*.egg-info/
+server/.installed.cfg
+server/*.egg
+server/MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+server/*.manifest
+server/*.spec
+
+# Installer logs
+server/pip-log.txt
+server/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+server/htmlcov/
+server/.tox/
+server/.nox/
+server/.coverage
+server/.coverage.*
+server/.cache
+server/nosetests.xml
+server/coverage.xml
+server/*.cover
+server/*.py,cover
+server/.hypothesis/
+server/.pytest_cache/
+server/cover/
+
+# Translations
+server/*.mo
+
+# Django stuff:
+
+# Flask stuff:
+server/instance/
+server/.webassets-cache
+
+# Scrapy stuff:
+server/.scrapy
+
+# Sphinx documentation
+server/docs/_build/
+
+# PyBuilder
+server/.pybuilder/
+server/target/
+
+# Jupyter Notebook
+server/.ipynb_checkpoints
+
+# IPython
+server/profile_default/
+server/ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+server/.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+server/__pypackages__/
+
+# Celery stuff
+server/celerybeat-schedule
+server/celerybeat.pid
+
+# SageMath parsed files
+server/*.sage.py
+
+# Environments
+server/.env
+server/.venv
+server/env/
+server/venv/
+server/ENV/
+server/env.bak/
+server/venv.bak/
+
+# Spyder project settings
+server/.spyderproject
+server/.spyproject
+
+# Rope project settings
+server/.ropeproject
+
+# mkdocs documentation
+server/site
+
+# mypy
+server/.mypy_cache/
+server/.dmypy.json
+server/dmypy.json
+
+# Pyre type checker
+server/.pyre/
+
+# pytype static type analyzer
+server/.pytype/
+
+# Cython debug symbols
+server/cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+server/*.orig
+
+# Created by git when using merge tools for conflicts
+server/*.BACKUP.*
+server/*.BASE.*
+server/*.LOCAL.*
+server/*.REMOTE.*
+server/*_BACKUP_*.txt
+server/*_BASE_*.txt
+server/*_LOCAL_*.txt
+server/*_REMOTE_*.txt
+
+### PyCharm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+server/.idea
+server/.idea/**/workspace.xml
+server/.idea/**/tasks.xml
+server/.idea/**/usage.statistics.xml
+server/.idea/**/dictionaries
+server/.idea/**/shelf
+
+# AWS User-specific
+server/.idea/**/aws.xml
+
+# Generated files
+server/.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+server/.idea/**/dataSources/
+server/.idea/**/dataSources.ids
+server/.idea/**/dataSources.local.xml
+server/.idea/**/sqlDataSources.xml
+server/.idea/**/dynamic.xml
+server/.idea/**/uiDesigner.xml
+server/.idea/**/dbnavigator.xml
+
+# Gradle
+server/.idea/**/gradle.xml
+server/.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+server/cmake-build-*/
+
+# Mongo Explorer plugin
+server/.idea/**/mongoSettings.xml
+
+# File-based project format
+server/*.iws
+
+# IntelliJ
+server/out/
+
+# mpeltonen/sbt-idea plugin
+server/.idea_modules/
+
+# JIRA plugin
+server/atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+server/.idea/replstate.xml
+
+# SonarLint plugin
+server/.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+server/com_crashlytics_export_strings.xml
+server/crashlytics.properties
+server/crashlytics-build.properties
+server/fabric.properties
+
+# Editor-based Rest Client
+server/.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+server/.idea/caches/build_file_checksums.ser
+
+### PyCharm Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+# https://plugins.jetbrains.com/plugin/7973-sonarlint
+server/.idea/**/sonarlint/
+
+# SonarQube Plugin
+# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
+server/.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+server/.idea/**/markdown-navigator.xml
+server/.idea/**/markdown-navigator-enh.xml
+server/.idea/**/markdown-navigator/
+
+# Cache file creation bug
+# See https://youtrack.jetbrains.com/issue/JBR-2257
+server/.idea/$CACHE_FILE$
+
+# CodeStream plugin
+# https://plugins.jetbrains.com/plugin/12206-codestream
+server/.idea/codestream.xml
+
+# Azure Toolkit for IntelliJ plugin
+# https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
+server/.idea/**/azureSettings.xml
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+
+# C extensions
+
+# Distribution / packaging
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+
+# Installer logs
+
+# Unit test / coverage reports
+
+# Translations
+
+# Django stuff:
+
+# Flask stuff:
+
+# Scrapy stuff:
+
+# Sphinx documentation
+
+# PyBuilder
+
+# Jupyter Notebook
+
+# IPython
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+
+# Celery stuff
+
+# SageMath parsed files
+
+# Environments
+
+# Spyder project settings
+
+# Rope project settings
+
+# mkdocs documentation
+
+# mypy
+
+# Pyre type checker
+
+# pytype static type analyzer
+
+# Cython debug symbols
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+server/[Bb]in
+server/[Ii]nclude
+server/[Ll]ib
+server/[Ll]ib64
+server/[Ll]ocal
+server/[Ss]cripts
+server/pyvenv.cfg
+server/pip-selfcheck.json
+server/private-key.pem
+### VisualStudioCode ###
+server/.vscode/*
+server/!.vscode/settings.json
+server/!.vscode/tasks.json
+server/!.vscode/launch.json
+server/!.vscode/extensions.json
+server/!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+server/.history/
+
+# Built Visual Studio Code Extensions
+server/*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+server/.history
+server/.ionide
+
+# Support for Project snippet scope
+server/.vscode/*.code-snippets
+
+# Ignore code-workspaces
+server/*.code-workspace
+
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+server/*.zwc
+server/*.zwc.old
+
+# Zsh completion-optimization dumpfile
+server/*zcompdump*
+
+# Zsh zcalc history
+server/.zcalc_history
+
+# A popular plugin manager's files
+server/._zinit
+server/.zinit_lstupd
+
+# zdharma/zshelldoc tool's files
+server/zsdoc/data
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+server/.directory_history
+
+# MichaelAquilina/zsh-autoswitch-virtualenv plugin's files
+# (for Zsh plugins using Python)
+
+# Zunit tests' output
+server/tests/_output/*
+!/tests/_output/.gitkeep
+
+### VisualStudio ###
+## Ignore Visual Studio temporary files, build results, and
+## files generated by popular Visual Studio add-ons.
+##
+## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+# User-specific files
+server/*.rsuser
+server/*.suo
+server/*.user
+server/*.userosscache
+server/*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+server/*.userprefs
+
+# Mono auto generated files
+server/mono_crash.*
+
+# Build results
+server/[Dd]ebug/
+server/[Dd]ebugPublic/
+server/[Rr]elease/
+server/[Rr]eleases/
+server/x64/
+server/x86/
+server/[Ww][Ii][Nn]32/
+server/[Aa][Rr][Mm]/
+server/[Aa][Rr][Mm]64/
+server/bld/
+server/[Bb]in/
+server/[Oo]bj/
+server/[Ll]og/
+server/[Ll]ogs/
+
+# Visual Studio 2015/2017 cache/options directory
+server/.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Visual Studio 2017 auto generated files
+server/Generated\ Files/
+
+# MSTest test Results
+server/[Tt]est[Rr]esult*/
+server/[Bb]uild[Ll]og.*
+
+# NUnit
+server/*.VisualState.xml
+server/TestResult.xml
+server/nunit-*.xml
+
+# Build Results of an ATL Project
+server/[Dd]ebugPS/
+server/[Rr]eleasePS/
+server/dlldata.c
+
+# Benchmark Results
+server/BenchmarkDotNet.Artifacts/
+
+# .NET Core
+server/project.lock.json
+server/project.fragment.lock.json
+server/artifacts/
+
+# ASP.NET Scaffolding
+server/ScaffoldingReadMe.txt
+
+# StyleCop
+server/StyleCopReport.xml
+
+# Files built by Visual Studio
+server/*_i.c
+server/*_p.c
+server/*_h.h
+server/*.ilk
+server/*.meta
+server/*.obj
+server/*.iobj
+server/*.pch
+server/*.pdb
+server/*.ipdb
+server/*.pgc
+server/*.pgd
+server/*.rsp
+server/*.sbr
+server/*.tlb
+server/*.tli
+server/*.tlh
+server/*.tmp
+server/*.tmp_proj
+server/*_wpftmp.csproj
+server/*.tlog
+server/*.vspscc
+server/*.vssscc
+server/.builds
+server/*.pidb
+server/*.svclog
+server/*.scc
+
+# Chutzpah Test files
+server/_Chutzpah*
+
+# Visual C++ cache files
+server/ipch/
+server/*.aps
+server/*.ncb
+server/*.opendb
+server/*.opensdf
+server/*.sdf
+server/*.cachefile
+server/*.VC.db
+server/*.VC.VC.opendb
+
+# Visual Studio profiler
+server/*.psess
+server/*.vsp
+server/*.vspx
+server/*.sap
+
+# Visual Studio Trace Files
+server/*.e2e
+
+# TFS 2012 Local Workspace
+server/$tf/
+
+# Guidance Automation Toolkit
+server/*.gpState
+
+# ReSharper is a .NET coding add-in
+server/_ReSharper*/
+server/*.[Rr]e[Ss]harper
+server/*.DotSettings.user
+
+# TeamCity is a build add-in
+server/_TeamCity*
+
+# DotCover is a Code Coverage Tool
+server/*.dotCover
+
+# AxoCover is a Code Coverage Tool
+server/.axoCover/*
+server/!.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+server/coverage*.json
+server/coverage*.xml
+server/coverage*.info
+
+# Visual Studio code coverage results
+server/*.coverage
+server/*.coveragexml
+
+# NCrunch
+server/_NCrunch_*
+server/.*crunch*.local.xml
+server/nCrunchTemp_*
+
+# MightyMoose
+server/*.mm.*
+server/AutoTest.Net/
+
+# Web workbench (sass)
+server/.sass-cache/
+
+# Installshield output folder
+server/[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+server/DocProject/buildhelp/
+server/DocProject/Help/*.HxT
+server/DocProject/Help/*.HxC
+server/DocProject/Help/*.hhc
+server/DocProject/Help/*.hhk
+server/DocProject/Help/*.hhp
+server/DocProject/Help/Html2
+server/DocProject/Help/html
+
+# Click-Once directory
+server/publish/
+
+# Publish Web Output
+server/*.[Pp]ublish.xml
+server/*.azurePubxml
+# Note: Comment the next line if you want to checkin your web deploy settings,
+# but database connection strings (with potential passwords) will be unencrypted
+server/*.pubxml
+server/*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# checkin your Azure Web App publish settings, but sensitive information contained
+# in these scripts will be unencrypted
+server/PublishScripts/
+
+# NuGet Packages
+server/*.nupkg
+# NuGet Symbol Packages
+server/*.snupkg
+# The packages folder can be ignored because of Package Restore
+server/**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+server/!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+server/*.nuget.props
+server/*.nuget.targets
+
+# Microsoft Azure Build Output
+server/csx/
+server/*.build.csdef
+
+# Microsoft Azure Emulator
+server/ecf/
+server/rcf/
+
+# Windows Store app package directories and files
+server/AppPackages/
+server/BundleArtifacts/
+server/Package.StoreAssociation.xml
+server/_pkginfo.txt
+server/*.appx
+server/*.appxbundle
+server/*.appxupload
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+server/*.[Cc]ache
+# but keep track of directories ending in .cache
+server/!?*.[Cc]ache/
+
+# Others
+server/ClientBin/
+server/~$*
+server/*~
+server/*.dbmdl
+server/*.dbproj.schemaview
+server/*.jfm
+server/*.pfx
+server/*.publishsettings
+server/orleans.codegen.cs
+
+# Including strong name files can present a security risk
+# (https://github.com/github/gitignore/pull/2483#issue-259490424)
+#*.snk
+
+# Since there are multiple workflows, uncomment next line to ignore bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+#bower_components/
+
+# RIA/Silverlight projects
+server/Generated_Code/
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version. Backup files are not needed,
+# because we have git ;-)
+server/_UpgradeReport_Files/
+server/Backup*/
+server/UpgradeLog*.XML
+server/UpgradeLog*.htm
+server/ServiceFabricBackup/
+server/*.rptproj.bak
+
+# SQL Server files
+server/*.mdf
+server/*.ldf
+server/*.ndf
+
+# Business Intelligence projects
+server/*.rdl.data
+server/*.bim.layout
+server/*.bim_*.settings
+server/*.rptproj.rsuser
+server/*- [Bb]ackup.rdl
+server/*- [Bb]ackup ([0-9]).rdl
+server/*- [Bb]ackup ([0-9][0-9]).rdl
+
+# Microsoft Fakes
+server/FakesAssemblies/
+
+# GhostDoc plugin setting file
+server/*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio
+server/.ntvs_analysis.dat
+server/node_modules/
+
+# Visual Studio 6 build log
+server/*.plg
+
+# Visual Studio 6 workspace options file
+server/*.opt
+
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+server/*.vbw
+
+# Visual Studio 6 auto-generated project file (contains which files were open etc.)
+server/*.vbp
+
+# Visual Studio 6 workspace and project file (working project files containing files to include in project)
+server/*.dsw
+server/*.dsp
+
+# Visual Studio 6 technical files
+
+# Visual Studio LightSwitch build output
+server/**/*.HTMLClient/GeneratedArtifacts
+server/**/*.DesktopClient/GeneratedArtifacts
+server/**/*.DesktopClient/ModelManifest.xml
+server/**/*.Server/GeneratedArtifacts
+server/**/*.Server/ModelManifest.xml
+server/_Pvt_Extensions
+
+# Paket dependency manager
+server/.paket/paket.exe
+server/paket-files/
+
+# FAKE - F# Make
+server/.fake/
+
+# CodeRush personal settings
+server/.cr/personal
+
+# Python Tools for Visual Studio (PTVS)
+
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
+
+# Tabs Studio
+server/*.tss
+
+# Telerik's JustMock configuration file
+server/*.jmconfig
+
+# BizTalk build output
+server/*.btp.cs
+server/*.btm.cs
+server/*.odx.cs
+server/*.xsd.cs
+
+# OpenCover UI analysis results
+server/OpenCover/
+
+# Azure Stream Analytics local run output
+server/ASALocalRun/
+
+# MSBuild Binary and Structured Log
+server/*.binlog
+
+# NVidia Nsight GPU debugger configuration file
+server/*.nvuser
+
+# MFractors (Xamarin productivity tool) working folder
+server/.mfractor/
+
+# Local History for Visual Studio
+server/.localhistory/
+
+# Visual Studio History (VSHistory) files
+server/.vshistory/
+
+# BeatPulse healthcheck temp database
+server/healthchecksdb
+
+# Backup folder for Package Reference Convert tool in Visual Studio 2017
+server/MigrationBackup/
+
+# Ionide (cross platform F# VS Code tools) working folder
+server/.ionide/
+
+# Fody - auto-generated XML schema
+server/FodyWeavers.xsd
+
+# VS Code files for those working on multiple tools
+
+# Local History for Visual Studio Code
+
+# Windows Installer files from build outputs
+server/*.cab
+server/*.msi
+server/*.msix
+server/*.msm
+server/*.msp
+
+# JetBrains Rider
+server/*.sln.iml
+
+### VisualStudio Patch ###
+# Additional files built by Visual Studio
+
+# End of https://www.toptal.com/developers/gitignore/api/python,django,visualstudio,visualstudiocode,pycharm,venv,git,zsh
+
+# Client Files
+
+# Created by https://www.toptal.com/developers/gitignore/api/react,webstorm
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,webstorm
+
+### react ###
+client/.DS_*
+client/*.log
+client/logs
+client/**/*.backup.*
+client/**/*.back.*
+
+client/node_modules
+client/bower_components
+
+client/*.sublime*
+
+client/psd
+client/thumb
+client/sketch
+
+### WebStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+client/.idea
+client/.idea/**/workspace.xml
+client/.idea/**/tasks.xml
+client/.idea/**/usage.statistics.xml
+client/.idea/**/dictionaries
+client/.idea/**/shelf
+
+# AWS User-specific
+client/.idea/**/aws.xml
+
+# Generated files
+client/.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+client/.idea/**/dataSources/
+client/.idea/**/dataSources.ids
+client/.idea/**/dataSources.local.xml
+client/.idea/**/sqlDataSources.xml
+client/.idea/**/dynamic.xml
+client/.idea/**/uiDesigner.xml
+client/.idea/**/dbnavigator.xml
+
+# Gradle
+client/.idea/**/gradle.xml
+client/.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+client/cmake-build-*/
+
+# Mongo Explorer plugin
+client/.idea/**/mongoSettings.xml
+
+# File-based project format
+client/*.iws
+
+# IntelliJ
+client/out/
+
+# mpeltonen/sbt-idea plugin
+client/.idea_modules/
+
+# JIRA plugin
+client/atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+client/.idea/replstate.xml
+
+# SonarLint plugin
+client/.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+client/com_crashlytics_export_strings.xml
+client/crashlytics.properties
+client/crashlytics-build.properties
+client/fabric.properties
+
+# Editor-based Rest Client
+client/.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+client/.idea/caches/build_file_checksums.ser
+
+### WebStorm Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+# https://plugins.jetbrains.com/plugin/7973-sonarlint
+client/.idea/**/sonarlint/
+
+# SonarQube Plugin
+# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
+client/.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+client/.idea/**/markdown-navigator.xml
+client/.idea/**/markdown-navigator-enh.xml
+client/.idea/**/markdown-navigator/
+
+# Cache file creation bug
+# See https://youtrack.jetbrains.com/issue/JBR-2257
+client/.idea/$CACHE_FILE$
+
+# CodeStream plugin
+# https://plugins.jetbrains.com/plugin/12206-codestream
+client/.idea/codestream.xml
+
+# Azure Toolkit for IntelliJ plugin
+# https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
+client/.idea/**/azureSettings.xml
+
+# End of https://www.toptal.com/developers/gitignore/api/react,webstorm
+
+# env
+.env
+
+# virtualenv
+.venv
+venv
+
+# Packaging
+build
+dist
+*.egg-info
+
+# sqlite DB
+db.sqlite3
+*.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Site media
+/data/
+server/static/richie/
+
+# Settings
+local.py
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.cache
+.pytest_cache
+nosetests.xml
+coverage.xml
+
+# Vagrant
+.vagrant
+
+# PyCharm IDE
+.idea/
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Eclipse
+.settings/
+
+# Rope
+.ropeproject
+
+# Sublime-Text:
+/*.sublime-project
+/*.sublime-workspace
+
+# TextMate 2
+.tm_properties
+
+# VS Code
+.vscode
+
+# Mac Os
+.DS_Store
+
+# Temp files
+*~
+.~lock*
+
+# Swap files
+*.sw[po]
+
+# JS dependencies
+node_modules
+
+# SASS
+.sass-cache
+
+# logs
+yarn-error.log
+
+# Exported strings & generated translation templates
+client/i18n/js
+*.pot
