@@ -50,6 +50,7 @@ LOCAL_APPS = [
     "apps.organizations",
     "apps.markdown",
     "apps.storages",
+    "apps.development"
 ]
 
 # Application definition
