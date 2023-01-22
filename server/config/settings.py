@@ -46,7 +46,8 @@ DEFAULT_APPS = [
 LOCAL_APPS = [
     "apps.accounts",
     "apps.courses",
-    "apps.deposits"
+    "apps.deposits",
+    "apps.organizations",
 ]
 
 # Application definition
